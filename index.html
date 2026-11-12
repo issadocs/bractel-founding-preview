@@ -70,6 +70,22 @@
     .paths p { color: var(--ink-2); font-size: clamp(17px, 1.5vw, 19px); max-width: 62ch; }
     .plan-note { margin: 0; font-size: 14.5px; color: var(--ink-2); max-width: 46ch; }
 
+    .close .refer {
+      margin: 2px 0 0;
+      font-size: 13.5px;
+      line-height: 1.45;
+      color: color-mix(in srgb, var(--teal-ink) 78%, transparent);
+      max-width: 48ch;
+    }
+    .close .refer a {
+      color: inherit;
+      text-underline-offset: 3px;
+    }
+    .close .refer a:hover,
+    .close .refer a:focus-visible {
+      color: var(--teal-ink);
+    }
+
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
       .mark .bm * { transition: none !important; }
@@ -851,6 +867,8 @@
               <a class="cta-secondary" href="https://www.bractel.com/book/?utm_source=founding-page&amp;utm_medium=landing&amp;utm_campaign=founding-firms">Apply as a founding firm</a>
             </div>
             <p class="plan-note">Plans are monthly. There’s no annual contract holding you in.</p>
+            <!-- At launch, change the referral URL in this mailto to the live bractel.com page. -->
+            <p class="refer">Do your clients also work with an estate attorney or a CPA? <a href="mailto:?subject=Bractel%20for%20estate-planning%20and%20CPA%20firms&amp;body=https%3A%2F%2Fissadocs.github.io%2Fbractel-founding-preview%2F%3Futm_source%3Dreferral%26utm_medium%3Demail%26utm_campaign%3Dfounding-firms">Send them this page</a>.</p>
           </div>
         </div>
       </div>
